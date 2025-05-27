@@ -1,0 +1,262 @@
+// OG basic
+// {
+//   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+//   "modules": [
+//     "title",
+//     "separator",
+//     "break",
+//     "uptime",
+//     "loadavg",
+//     "processes",
+//     "packages",
+//     "shell",
+//     "editor",
+//     "terminal",
+//     "battery",
+//     "wifi",
+//     "publicip",
+//     "localip",
+//     "weather",
+//     "break",
+//     "separator"
+//   ]
+// }
+
+//////////////////////////////////////////////////////////////////
+
+// arch min
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": "none",    
+    "display": {
+        "separator": " ›  "
+    },
+    "modules": [
+	"break",
+        {
+            "type": "os",
+            "key": "OS  ",
+            "keyColor": "31",  // = color1
+        },
+        {
+            "type": "kernel",
+            "key": "KER ",
+            "keyColor": "32",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": "PKG ",
+            "keyColor": "33",  
+        },
+        {
+            "type": "shell",
+            "key": "SH  ",
+            "keyColor": "34", 
+        },
+        {
+            "type": "terminal",
+            "key": "TER ",
+            "keyColor": "35", 
+        },
+        {
+            "type": "wm",
+            "key": "WM  ",
+            "keyColor": "36", 
+        },
+        "break",
+    ]
+}
+
+/////////////////////////////////////////////////////////////////////
+
+//OS ascii
+// {
+//     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+//     "logo": {
+//         "source": "~/.config/fastfetch/ascii/arch.txt",
+//         "padding": {
+//             "top": 2,
+//             "right": 6
+//         }
+//     },
+//     "display": {
+//         "separator": " "
+//     },
+//     "modules": [
+// 	"break",
+// 	"break",
+// 	{
+//             "type": "title",
+//             "keyWidth": 10
+//         },
+//         "break",
+//         {
+//             "type": "os",
+//             "key": " ",
+//             "keyColor": "33",  // = color3
+//         },
+//         {
+//             "type": "kernel",
+//             "key": " ",
+//             "keyColor": "33",
+//         },
+//         {
+//             "type": "packages",
+//             "format": "{} (pacman)",
+//             "key": " ",
+//             "keyColor": "33",  
+//         },
+//         {
+//             "type": "shell",
+//             "key": " ",
+//             "keyColor": "33", 
+//         },
+//         {
+//             "type": "terminal",
+//             "key": " ",
+//             "keyColor": "33", 
+//         },
+//         {
+//             "type": "wm",
+//             "key": " ",
+//             "keyColor": "33", 
+//         },
+//         {
+//             "type": "uptime",
+//             "key": " ",
+//             "keyColor": "33", 
+//         },
+//         {
+//             "type": "media",
+//             "key": "󰝚 ",
+//             "keyColor": "33", 
+//         },
+//         "break",
+//         "colors",
+//         "break",
+//         "break",
+//     ]
+// }
+
+///////////////////////////////////////////////////////////////////
+
+// {
+//     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+//     "logo": {
+//         "source": "~/.config/fastfetch/ascii/cat.txt",
+//         "padding": {
+//             "top": 2,
+//             "right": 6
+//         }
+//     },
+//     "display": {
+//         "separator": " •  "
+//     },
+//     "modules": [
+// 	"break",
+// 	"break",
+// 	{
+//             "type": "title",
+//             "color": {
+//                 "user": "32",  // = color2
+//                 "at": "37",
+//                 "host": "32"
+//             }
+//         },
+//         "break",
+//         {
+//             "type": "os",
+//             "key": "distribution   ",
+//             "keyColor": "33",
+//         },
+//         {
+//             "type": "kernel",
+//             "key": "linux kernel   ",
+//             "keyColor": "33",
+//         },
+//         {
+//             "type": "packages",
+//             "format": "{} (pacman)",
+//             "key": "packages       ",
+//             "keyColor": "33",  
+//         },
+//         {
+//             "type": "shell",
+//             "key": "unix shell     ",
+//             "keyColor": "33", 
+//         },
+//         {
+//             "type": "terminal",
+//             "key": "terminal       ",
+//             "keyColor": "33", 
+//         },
+//         {
+//             "type": "wm",
+//             "format": "{} ({3})",
+//             "key": "window manager ",
+//             "keyColor": "33", 
+//         },
+//         "break",
+//         {
+//             "type": "colors",
+//             "symbol": "circle",
+//         },
+//         "break",
+//         "break",
+//     ]
+// }
+
+//////////////////////////////////////////////////////////////////////
+
+// arch small
+// {
+//     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+//     "logo": {
+//         "source": "arch_small", // search for logos: fastfetch --list-logos or --print-logos
+//         "padding": {
+// 	        "top": 1
+// 	},
+//     },
+//     "display": {
+//         "separator": "  "
+//     },
+//     "modules": [
+// 	"break",
+// 	"title",
+//         {
+//             "type": "os",
+//             "key": "os    ",
+//             "keyColor": "33",  // = color3
+//         },
+//         {
+//             "type": "kernel",
+//             "key": "kernel",
+//             "keyColor": "33",
+//         },
+//         {
+//             "type": "host",
+//             "format": "{5} {1}",
+//             "key": "host  ",
+//             "keyColor": "33",
+//         },
+//         {
+//             "type": "packages",
+//             "format": "{} (pacman)",
+//             "key": "pkgs  ",
+//             "keyColor": "33",  
+//         },
+//         {
+//             "type": "uptime",
+//             "format": "{2}h {3}m",
+//             "key": "uptime",
+//             "keyColor": "33",
+//         },
+//         {
+//             "type": "memory",
+//             "key": "memory",
+//             "keyColor": "33",
+//         },
+//         "break",
+//     ]
+// }
