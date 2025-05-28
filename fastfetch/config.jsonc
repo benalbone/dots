@@ -1,72 +1,72 @@
 // OG basic
-// {
-//   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-//   "modules": [
-//     "title",
-//     "separator",
-//     "break",
-//     "uptime",
-//     "loadavg",
-//     "processes",
-//     "packages",
-//     "shell",
-//     "editor",
-//     "terminal",
-//     "battery",
-//     "wifi",
-//     "publicip",
-//     "localip",
-//     "weather",
-//     "break",
-//     "separator"
-//   ]
-// }
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "modules": [
+    "title",
+    "separator",
+    "break",
+    "uptime",
+    "loadavg",
+    "processes",
+    "packages",
+    "shell",
+    "editor",
+    "terminal",
+    "battery",
+    "wifi",
+    "publicip",
+    "localip",
+    "weather",
+    "break",
+    "separator"
+  ]
+}
 
 //////////////////////////////////////////////////////////////////
 
 // arch min
-{
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": "none",    
-    "display": {
-        "separator": " ›  "
-    },
-    "modules": [
-	"break",
-        {
-            "type": "os",
-            "key": "OS  ",
-            "keyColor": "31",  // = color1
-        },
-        {
-            "type": "kernel",
-            "key": "KER ",
-            "keyColor": "32",
-        },
-        {
-            "type": "packages",
-            "format": "{} (pacman)",
-            "key": "PKG ",
-            "keyColor": "33",  
-        },
-        {
-            "type": "shell",
-            "key": "SH  ",
-            "keyColor": "34", 
-        },
-        {
-            "type": "terminal",
-            "key": "TER ",
-            "keyColor": "35", 
-        },
-        {
-            "type": "wm",
-            "key": "WM  ",
-            "keyColor": "36", 
-        },
-        "break",
-    ]
-}
+// {
+//     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+//     "logo": "none",    
+//     "display": {
+//         "separator": " ›  "
+//     },
+//     "modules": [
+// 	"break",
+//         {
+//             "type": "os",
+//             "key": "OS  ",
+//             "keyColor": "31",  // = color1
+//         },
+//         {
+//             "type": "kernel",
+//             "key": "KER ",
+//             "keyColor": "32",
+//         },
+//         {
+//             "type": "packages",
+//             "format": "{} (pacman)",
+//             "key": "PKG ",
+//             "keyColor": "33",  
+//         },
+//         {
+//             "type": "shell",
+//             "key": "SH  ",
+//             "keyColor": "34", 
+//         },
+//         {
+//             "type": "terminal",
+//             "key": "TER ",
+//             "keyColor": "35", 
+//         },
+//         {
+//             "type": "wm",
+//             "key": "WM  ",
+//             "keyColor": "36", 
+//         },
+//         "break",
+//     ]
+// }
 
 /////////////////////////////////////////////////////////////////////
 
