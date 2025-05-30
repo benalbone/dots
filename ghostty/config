@@ -17,9 +17,9 @@ copy-on-select = clipboard
 # desktop-notifications = true
 
 ### can use hidden//native//transparent
-macos-titlebar-style = native
+macos-titlebar-style = transparent
 
-background = 000000
+# background = 000000
 background-opacity = 0.9
 
 confirm-close-surface = false
@@ -34,6 +34,7 @@ confirm-close-surface = false
 # theme = GruvboxDarkHard
 # theme = material
 # theme = rose-pine
+theme = catppuccin-mocha
 # custom-shader = shaders/starfield.glsl
 
 # window-padding-balance = true
