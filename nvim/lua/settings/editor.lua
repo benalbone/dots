@@ -34,11 +34,14 @@ vim.opt.isfname:append("@-@")
 -- changes to a fast update time
 vim.opt.updatetime = 50
 
--- adds the bar on the right ----------------------------------------------->
+-- adds the bar on the right ------------------------------------------------>
 vim.opt.colorcolumn = "80"
 
 -- editor asthetic
 vim.opt.termguicolors = true -- improves colours
+
+-- sets colorscheme
+vim.cmd.colorscheme "catppuccin-mocha"
 
 -- sets background to transparent using the term colour
 vim.cmd [[
@@ -47,4 +50,3 @@ highlight NonText guibg=NONE
 highlight Normal ctermbg=NONE
 highlight NonText ctermbg=NONE
 ]]
-
