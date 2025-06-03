@@ -1,7 +1,7 @@
-# font-family = "MonoLisa Custom"
+font-family = "MonoLisa Custom"
 ### JetBrainsMono is the default font
 ### However, we specify a nerd variation for compatability with nvim plugins
-font-family = "JetBrainsMono Nerd Font Mono"
+# font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 16
 cursor-style = block
 
