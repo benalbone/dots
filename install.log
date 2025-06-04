@@ -1,0 +1,9 @@
+[11:04:58 2025-06-04] FETCHING Version 2.40.10
+[11:04:58 2025-06-04] CREATING /Users/ben/.spicetify
+[11:04:58 2025-06-04] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.40.10/spicetify-2.40.10-darwin-arm64.tar.gz
+[11:04:59 2025-06-04] EXTRACTING /Users/ben/.spicetify/spicetify.tar.gz
+[11:04:59 2025-06-04] SETTING EXECUTABLE PERMISSIONS TO /Users/ben/.spicetify/spicetify
+[11:04:59 2025-06-04] REMOVING /Users/ben/.spicetify/spicetify.tar.gz
+[11:04:59 2025-06-04] spicetify path already set in /Users/ben/.zshrc, continuing...
+[11:04:59 2025-06-04] spicetify v2.40.10 was installed successfully to /Users/ben/.spicetify
+[11:04:59 2025-06-04] Run 'spicetify --help' to get started
