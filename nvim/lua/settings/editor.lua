@@ -1,4 +1,11 @@
 -- EDITOR SETTINGS --
+
+-- disable netrw for nvim-tree
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- sets large cursor for edit mode
 vim.opt.guicursor = ""
 
 -- enables line number and relative line number

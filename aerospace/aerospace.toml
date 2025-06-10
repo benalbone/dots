@@ -68,7 +68,7 @@ run = 'layout floating'
     inner.vertical =   10
     outer.left =       10
     outer.bottom =     10
-    outer.top =        50
+    outer.top =        30 # set to '50' when using sketchybar
     outer.right =      10
 
 [mode.main.binding]
