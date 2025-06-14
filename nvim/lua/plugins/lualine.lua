@@ -53,7 +53,7 @@ return {
           tabline = {},
           winbar = {},
           inactive_winbar = {},
-          extensions = {}
+          extensions = { 'nvim-tree' }
       }
   end,
 }
