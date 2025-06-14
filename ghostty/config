@@ -1,8 +1,5 @@
-font-family = "MonoLisa Custom"
-### JetBrainsMono is the default font
-### However, we specify a nerd variation for compatability with nvim plugins
-# font-family = "JetBrainsMono Nerd Font Mono"
-font-size = 16
+font-size = 14
+font-family = "JetBrains Mono"
 cursor-style = block
 
 shell-integration = none
@@ -13,14 +10,10 @@ clipboard-write = allow
 # clipboard-paste-protection = true
 copy-on-select = clipboard
 
-# quit-after-last-window-closed = true
-# desktop-notifications = true
+macos-titlebar-style = tabs
 
-### can use hidden//native//transparent
-macos-titlebar-style = transparent
-
-# background = 000000
-background-opacity = 0.9
+background-opacity = 0.95
+background-blur-radius = 20
 
 confirm-close-surface = false
 
@@ -28,22 +21,6 @@ confirm-close-surface = false
 # window-decoration = false
 # macos-window-shadow = false
 
-# background-blur-radius = 80
-# background-opacity = 0.75
-# theme = iTerm2 Default
-# theme = GruvboxDarkHard
-# theme = material
-# theme = rose-pine
-theme = catppuccin-mocha
+# theme = light:rose-pine-dawn,dark:rose-pine
+# theme = catppuccin-mocha
 # custom-shader = shaders/starfield.glsl
-
-# window-padding-balance = true
-# window-padding-x = 10
-# window-padding-y = 10
-# font-style-bold = true
-# font-style = Bold
-
-# macos-icon=glass
-# macos-icon = custom-style
-# macos-icon-ghost-color = #ebe5c6
-# macos-icon-screen-color = #1f1f1f
