@@ -12,7 +12,23 @@ return {
       },
       filters = {
           dotfiles = false,
-      }
+          exclude = {
+              "~/.config"
+          },
+      },
+      renderer = {
+          hidden_display = "all",
+          indent_markers = {
+              enable = true,
+              inline_arrows = false,
+          },
+      },
+      update_focused_file = {
+          enable = true,
+          update_root = {
+              enable = true,
+          },
+      },
     })
   end,
 }
