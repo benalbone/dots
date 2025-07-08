@@ -11,6 +11,7 @@ clipboard-write = allow
 copy-on-select = clipboard
 
 macos-titlebar-style = tabs
+macos-icon = blueprint
 
 # background-opacity = 0.95
 # background-blur-radius = 20
