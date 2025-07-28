@@ -7,21 +7,30 @@ shell-integration-features = no-cursor
 
 clipboard-read = allow
 clipboard-write = allow
-# clipboard-paste-protection = true
 copy-on-select = clipboard
 
 macos-titlebar-style = tabs
 macos-icon = blueprint
 
+confirm-close-surface = false
+
 # background-opacity = 0.95
 # background-blur-radius = 20
 
-confirm-close-surface = false
+# clipboard-paste-protection = true
+
+# theme = light:rose-pine-dawn,dark:rose-pine
+# theme = catppuccin-mocha
 
 # -- square borders --
 # window-decoration = false
 # macos-window-shadow = false
 
-# theme = light:rose-pine-dawn,dark:rose-pine
-# theme = catppuccin-mocha
-# custom-shader = shaders/starfield.glsl
+# -- Transelvania Theme --
+# auto-update-channel = tip
+# background-image = wallpapers/castle.png
+# custom-shader = shaders/transelvania/spooky-mist.glsl
+# custom-shader = shaders/transelvania/moon.glsl
+# custom-shader = shaders/transelvania/bats.glsl
+# background-opacity = 0.8
+# background-blur-radius = 10
