@@ -2,23 +2,24 @@ font-size = 14
 font-family = "JetBrains Mono"
 cursor-style = block
 
-shell-integration = none
-shell-integration-features = no-cursor
+# shell-integration = none
+shell-integration-features = no-cursor, sudo, title
 
 clipboard-read = allow
 clipboard-write = allow
 copy-on-select = clipboard
 
-macos-titlebar-style = tabs
+# macos-titlebar-style = tabs
 macos-icon = blueprint
 
 confirm-close-surface = false
 
-# background-opacity = 0.95
-# background-blur-radius = 20
+background-opacity = 0.80
+background-blur-radius = 20
 
 # clipboard-paste-protection = true
 
+theme = GruvBoxDarkHard
 # theme = light:rose-pine-dawn,dark:rose-pine
 # theme = catppuccin-mocha
 
