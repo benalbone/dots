@@ -50,7 +50,8 @@ vim.opt.termguicolors = true -- improves colours
 -- sets colorscheme
 -- vim.cmd.colorscheme "vague"
 -- vim.cmd.colorscheme "catppuccin-mocha"
-vim.cmd.colorscheme "nord"
+-- vim.cmd.colorscheme "nord"
+vim.cmd.colorscheme "gruvbox"
 
 -- sets background to transparent using the term colour
 vim.cmd [[

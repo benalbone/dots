@@ -1,7 +1,12 @@
 return {
     -- nord
-    {
-        'shaunsingh/nord.nvim',
+    -- {
+    --     'shaunsingh/nord.nvim',
+    -- },
+
+    -- gruvbox
+    { 
+        "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = 'transparent_mode = false,' 
     },
 
     -- dashboard
@@ -81,7 +86,8 @@ return {
         config = function()
             require('lualine').setup({
                 options = {
-                    theme = 'nord',
+                    theme = 'gruvbox_dark',
+                    -- theme = 'nord',
                 },
                 sections = {
                     lualine_c = {
