@@ -23,6 +23,8 @@ theme = GruvBoxDarkHard
 # theme = light:rose-pine-dawn,dark:rose-pine
 # theme = catppuccin-mocha
 
+# custom-shader = shaders/starfield.glsl
+
 # -- square borders --
 # window-decoration = false
 # macos-window-shadow = false
