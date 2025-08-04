@@ -27,36 +27,36 @@ return {
     },
 
     -- indent-blankline
-    {
-        "lukas-reineke/indent-blankline.nvim",
-        main = "ibl",
-        ---@module "ibl"
-        ---@type ibl.config
-        config = function()
-            require("ibl").setup({
-                indent = {
-                    highlight = { "Whitespace" },
-                },
-                scope = {
-                    highlight = { "Label" },
-                },
-                exclude = {
-                    filetypes = {
-                        "dashboard",
-                        "markdown",
-                        "help",
-                        "lazy"
-                    },
-                    buftypes = {
-                        "terminal",
-                        "nofile",
-                        "quickfix",
-                        "prompt"
-                    },
-                },
-            })
-        end,
-    },
+    -- {
+    --     "lukas-reineke/indent-blankline.nvim",
+    --     main = "ibl",
+    --     ---@module "ibl"
+    --     ---@type ibl.config
+    --     config = function()
+    --         require("ibl").setup({
+    --             indent = {
+    --                 highlight = { "Whitespace" },
+    --             },
+    --             scope = {
+    --                 highlight = { "Label" },
+    --             },
+    --             exclude = {
+    --                 filetypes = {
+    --                     "dashboard",
+    --                     "markdown",
+    --                     "help",
+    --                     "lazy"
+    --                 },
+    --                 buftypes = {
+    --                     "terminal",
+    --                     "nofile",
+    --                     "quickfix",
+    --                     "prompt"
+    --                 },
+    --             },
+    --         })
+    --     end,
+    -- },
 
     -- lazygit
     {
@@ -173,5 +173,23 @@ return {
                 },
             })
         end,
+    },
+
+    {
+        "shellRaining/hlchunk.nvim",
+        event = { "BufReadPre", "BufNewFile" },
+        config = function()
+            require("hlchunk").setup({
+                chunk = {
+                    enable = true
+                },
+                line_num = {
+                    enable = true
+                },
+                indent = {
+                    enable = true
+                },
+            })
+        end
     }
 }
