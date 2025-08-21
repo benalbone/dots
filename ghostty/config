@@ -15,7 +15,7 @@ macos-icon = blueprint
 confirm-close-surface = false
 
 background-opacity = 0.85
-background-blur-radius = 40
+background-blur-radius = 60
 
 # clipboard-paste-protection = true
 
