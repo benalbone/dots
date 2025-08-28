@@ -2,7 +2,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # fzf colorscheme (oxocarbon)
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#ffffff,bg:#161616,hl:#08bdba --color=fg+:#f2f4f8,bg+:#262626,hl+:#3ddbd9 --color=info:#78a9ff,prompt:#33b1ff,pointer:#42be65 --color=marker:#ee5396,spinner:#ff7eb6,header:#be95ff'
+# export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#ffffff,bg:#161616,hl:#08bdba --color=fg+:#f2f4f8,bg+:#262626,hl+:#3ddbd9 --color=info:#78a9ff,prompt:#33b1ff,pointer:#42be65 --color=marker:#ee5396,spinner:#ff7eb6,header:#be95ff'
 
 # omzsh theme
 ZSH_THEME="robbyrussell"
@@ -85,5 +85,5 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$PATH:/Users/ben/.local/bin"
 
 # Starship
-export STARSHIP_CONFIG=~/.config/starship/gruvbox-starship.toml
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
