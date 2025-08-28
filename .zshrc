@@ -68,6 +68,8 @@ alias cdc='cd ~/.config'
 
 alias ipod='~/Developer/scripts/downloadSongs.sh iPod'
 
+alias ff='fastfetch'
+
 # Work Aliases
 alias workexp='cd ~/Downloads; echo "Moving into Downloads directory."; sftp TRDP\\workexp@192.168.11.57'
 alias db2='cd ~/Downloads; echo "Moving into Downloads directory."; sftp ben@10.25'
@@ -81,3 +83,7 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 # Created by `pipx` on 2025-06-23 08:21:13
 export PATH="$PATH:/Users/ben/.local/bin"
+
+# Starship
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+eval "$(starship init zsh)"
