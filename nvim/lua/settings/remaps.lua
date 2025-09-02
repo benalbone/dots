@@ -27,3 +27,7 @@ vim.keymap.set('v', '<leader>P', '"+P', { noremap = true })
 -- turns Ctrl + C into Esc
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
+-- toggleterm.nvim
+vim.keymap.set('n', '<leader>tt', function()
+    vim.cmd('ToggleTerm direction=float')
+end, { noremap = true})
