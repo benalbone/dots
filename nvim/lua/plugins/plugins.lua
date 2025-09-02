@@ -174,7 +174,8 @@ return {
             })
         end,
     },
-
+    
+    -- hlchunk
     {
         "shellRaining/hlchunk.nvim",
         event = { "BufReadPre", "BufNewFile" },
@@ -191,5 +192,10 @@ return {
                 },
             })
         end
+    },
+
+    -- toggleterm (floating terminal)
+    {
+        'akinsho/toggleterm.nvim', version = "*", config = true
     }
 }
