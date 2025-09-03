@@ -212,3 +212,7 @@ if.app-name-regex-substring = 'eufy'
 [[on-window-detected]]
 if.app-name-regex-substring = 'reminders'
     run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'iphone mirroring'
+    run = 'layout floating'
