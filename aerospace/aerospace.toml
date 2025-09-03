@@ -208,3 +208,7 @@ if.app-name-regex-substring = 'calendar'
 [[on-window-detected]]
 if.app-name-regex-substring = 'eufy'
     run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'reminders'
+    run = 'layout floating'
