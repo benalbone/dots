@@ -1,12 +1,5 @@
 # after starting aerospace, also start sketchybar and jankyborders
-after-startup-command = [
-    'exec-and-forget borders'
-]
-
-# Notify Sketchybar about workspace change
-exec-on-workspace-change = [
-    'exec-and-forget borders'
-]
+after-startup-command = []
 
 # Start AeroSpace at login
 start-at-login = false
@@ -210,4 +203,8 @@ if.app-name-regex-substring = 'utm'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'calendar'
+    run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'eufy'
     run = 'layout floating'
