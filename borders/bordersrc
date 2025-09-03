@@ -4,12 +4,8 @@ options=(
 	style=round
 	width=6.0
 	hidpi=on
-    # Gruvbox Green
-	# active_color=0xffB0B123
-    # Defaul white
-    # active_color=0xffe2e2e3
-    active_color=0xffffffff
-	inactive_color=0xff414550
+	active_color=0xffCC2431
+	inactive_color=0xffC0C0C0
 )
 
 borders "${options[@]}"
