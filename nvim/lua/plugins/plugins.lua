@@ -1,13 +1,13 @@
 return {
     -- nord
-    -- {
-    --     'shaunsingh/nord.nvim',
-    -- },
+    {
+        'shaunsingh/nord.nvim',
+    },
 
     -- gruvbox
-    { 
-        "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = 'transparent_mode = false,' 
-    },
+    -- { 
+    --     "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = 'transparent_mode = false,' 
+    -- },
 
     -- dashboard
     {
