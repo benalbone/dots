@@ -86,8 +86,8 @@ return {
         config = function()
             require('lualine').setup({
                 options = {
-                    theme = 'gruvbox_dark',
-                    -- theme = 'nord',
+                    -- theme = 'gruvbox_dark',
+                    theme = 'nord',
                 },
                 sections = {
                     lualine_c = {
