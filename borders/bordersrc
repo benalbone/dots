@@ -4,8 +4,8 @@ options=(
 	style=round
 	width=6.0
 	hidpi=on
-    active_color=0xffD08B57
-    inactive_color=0xffBFAA80
+    active_color=0xff3B4252
+    inactive_color=0xffECEFF4
     blacklist="iPhone Mirroring"
 )
 
