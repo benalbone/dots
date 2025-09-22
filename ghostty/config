@@ -19,7 +19,8 @@ background-blur-radius = 60
 
 # clipboard-paste-protection = true
 
-theme = GruvBoxDarkHard
+theme = Nord
+# theme = GruvBoxDarkHard
 # theme = light:rose-pine-dawn,dark:rose-pine
 # theme = catppuccin-mocha
 
