@@ -206,9 +206,9 @@ if.app-name-regex-substring = 'appcleaner'
 if.app-name-regex-substring = 'raycast'
     run = 'layout floating'
 
-[[on-window-detected]]
-if.app-name-regex-substring = 'utm'
-    run = 'layout floating'
+# [[on-window-detected]]
+# if.app-name-regex-substring = 'utm'
+#     run = 'layout floating'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'calendar'
