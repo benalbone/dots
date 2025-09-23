@@ -209,3 +209,32 @@ if.app-name-regex-substring = 'reminders'
 [[on-window-detected]]
 if.app-name-regex-substring = 'iphone mirroring'
     run = 'layout floating'
+
+# Move certain windows to certain workspaces
+[[on-window-detected]]
+if.app-id = 'com.brave.Browser'
+run = "move-node-to-workspace 0"
+
+[[on-window-detected]]
+if.app-id = 'com.coteditor.CotEditor'
+run = "move-node-to-workspace 0"
+
+[[on-window-detected]]
+if.app-id = 'com.googlecode.iterm2'
+run = "move-node-to-workspace 0"
+
+[[on-window-detected]]
+if.app-id = 'net.whatsapp.WhatsApp'
+run = "move-node-to-workspace 9"
+
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = "move-node-to-workspace 9"
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.teams2'
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Outlook'
+run = "move-node-to-workspace 1"
