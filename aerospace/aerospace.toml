@@ -171,24 +171,12 @@ automatically-unhide-macos-hidden-apps = false
 
 # Ignored apps:
 [[on-window-detected]]
-if.app-name-regex-substring = 'whatsapp'
-    run = 'layout floating'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'discord'
-    run = 'layout floating'
-
-[[on-window-detected]]
 if.app-name-regex-substring = 'finder'
     run = 'layout floating'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'system settings'
     run = 'layout floating'
-
-# [[on-window-detected]]
-# if.app-name-regex-substring = 'claude'
-#     run = 'layout floating'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'vnc viewer'
@@ -205,10 +193,6 @@ if.app-name-regex-substring = 'appcleaner'
 [[on-window-detected]]
 if.app-name-regex-substring = 'raycast'
     run = 'layout floating'
-
-# [[on-window-detected]]
-# if.app-name-regex-substring = 'utm'
-#     run = 'layout floating'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'calendar'
