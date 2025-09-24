@@ -65,6 +65,7 @@ alias pipes='pipes.sh -t 3 -p 3 -f 80 -R'
 
 alias buuc='brew update && brew upgrade && brew cleanup'
 alias cdc='cd ~/.config'
+alias cdd='cd ~/Downloads'
 
 alias ipod='~/Developer/scripts/downloadSongs.sh iPod'
 
