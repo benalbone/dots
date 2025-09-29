@@ -78,6 +78,8 @@ alias ssj-old="/Users/ben/Documents/Work/Scripts/tracked/scripts/Login.pl"
 alias pinj="/Users/ben/Documents/Work/Scripts/tracked/scripts/Ping.pl"
 alias disk='echo "Opening Returned Disk Swap walkthrough: "; nvim ~/Documents/Work/Notes/disk-backup.md'
 alias ssj="perl $HOME/Documents/Work/Scripts/tracked/scripts/NewLogin.pl"
+alias cdw='cd ~/Documents/Work'
+
 
 export PATH="/Users/ben/.gem/ruby/3.4.0/bin$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
