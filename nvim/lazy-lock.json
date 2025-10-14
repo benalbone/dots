@@ -5,7 +5,7 @@
   "lazy.nvim": { "branch": "main", "commit": "1ea3c4085785f460fb0e46d2fe1ee895f5f9e7c1" },
   "lazygit.nvim": { "branch": "main", "commit": "2305deed25bc61b866d5d39189e9105a45cf1cfb" },
   "lualine.nvim": { "branch": "master", "commit": "b8c23159c0161f4b89196f74ee3a6d02cdc3a955" },
-  "mini.nvim": { "branch": "main", "commit": "5e1dd6e3d5f758eccf6c51461559da785dba688c" },
+  "mini.nvim": { "branch": "main", "commit": "4eaa8f4034535c372f6ca04b2772897048296dab" },
   "noice.nvim": { "branch": "main", "commit": "38c702be0d8fea81527ee6a73e1e834e72481193" },
   "nord.nvim": { "branch": "master", "commit": "80c1e5321505aeb22b7a9f23eb82f1e193c12470" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
@@ -14,6 +14,6 @@
   "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
   "nvim-web-devicons": { "branch": "master", "commit": "b8221e42cf7287c4dcde81f232f58d7b947c210d" },
   "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },
-  "render-markdown.nvim": { "branch": "main", "commit": "d53856423be5ef3c267d26ee261b0981b372f718" },
+  "render-markdown.nvim": { "branch": "main", "commit": "691651de4e02cbea9ff50c62d7d3a679abc95564" },
   "toggleterm.nvim": { "branch": "main", "commit": "50ea089fc548917cc3cc16b46a8211833b9e3c7c" }
 }
