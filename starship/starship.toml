@@ -16,7 +16,7 @@ $docker_context\
 """
 
 [character]
-success_symbol = '[ \$](fg:#89b4fa)'
+success_symbol = '[ \$](fg:#a6e3a1)'
 error_symbol = '[ \$](bold red)'
 vimcmd_symbol = '[ <<~](bold green)'
 vimcmd_replace_symbol = '[<<~](bold green)'
