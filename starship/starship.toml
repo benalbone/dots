@@ -124,7 +124,7 @@ disabled = true
 [nim]
 disabled = true
 
-[pallette.nord]
+[palette.nord]
 # polar night
 nord0 = '#2e3440'
 nord1 = '#3b4252'
