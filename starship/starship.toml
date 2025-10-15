@@ -16,7 +16,7 @@ $docker_context\
 """
 
 [character]
-success_symbol = '[ \$](fg:#a6e3a1)'
+success_symbol = '[ \$](fg:#00ff96)'
 error_symbol = '[ \$](bold red)'
 vimcmd_symbol = '[ <<~](bold green)'
 vimcmd_replace_symbol = '[<<~](bold green)'
@@ -24,7 +24,7 @@ vimcmd_visual_symbol = '[V](bold yellow)'
 
 [cmd_duration]
 min_time = 500
-format = 'takes (bold yellow)[$duration](bold yellow)'
+format = 'takes (bold yellow)[$duration](bold fg:#f5c2e7)'
 
 [memory_usage]
 disabled = false
