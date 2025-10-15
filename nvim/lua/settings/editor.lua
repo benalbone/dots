@@ -45,7 +45,7 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 -- editor asthetic
-vim.opt.termguicolors = true -- improves colours
+-- vim.opt.termguicolors = true // now loaded as part of nvim-colorizer plugin setup
 
 -- sets colorscheme
 -- vim.cmd.colorscheme "vague"
