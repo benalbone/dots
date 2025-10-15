@@ -6,7 +6,7 @@ $character\
 # [@](fg:#94e2d5)$hostname\
 
 right_format = """
-$cmd_duration (fg:bold yellow)\
+$cmd_duration(fg:bold yellow)\
 $git_branch\
 $git_status\
 $golang\
