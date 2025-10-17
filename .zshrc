@@ -55,7 +55,6 @@ eval "$(fzf --zsh)"
 
 # Personal Aliases
 alias ls='ls --color'
-alias vi='nvim'
 
 alias starwars='ssh starwarstel.net'
 alias bonsai='cbonsai -l -i'
@@ -69,8 +68,6 @@ alias cdd='cd ~/Downloads'
 
 alias ipod='~/Developer/scripts/downloadSongs.sh iPod'
 
-alias ff='fastfetch'
-
 # Work Aliases
 alias workexp='cd ~/Downloads; echo "Moving into Downloads directory."; sftp TRDP\\workexp@192.168.11.57'
 alias db2='cd ~/Downloads; echo "Moving into Downloads directory."; sftp ben@10.25'
@@ -80,7 +77,6 @@ alias disk='echo "Opening Returned Disk Swap walkthrough: "; nvim ~/Documents/Wo
 alias ssj="perl $HOME/Documents/Work/Scripts/tracked/scripts/NewLogin.pl"
 alias cdw='cd ~/Documents/Work'
 
-
 export PATH="/Users/ben/.gem/ruby/3.4.0/bin$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
@@ -88,5 +84,5 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$PATH:/Users/ben/.local/bin"
 
 # Starship
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=~/.config/starship/starship.toml
+# eval "$(starship init zsh)"
