@@ -82,7 +82,3 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 # Created by `pipx` on 2025-06-23 08:21:13
 export PATH="$PATH:/Users/ben/.local/bin"
-
-# Starship
-# export STARSHIP_CONFIG=~/.config/starship/starship.toml
-# eval "$(starship init zsh)"
