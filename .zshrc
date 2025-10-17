@@ -19,7 +19,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # source ~/.catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 # plugins
-plugins=(zsh-syntax-highlighting git fzf-tab) # zsh-autosuggestions
+plugins=(git fzf-tab) # zsh-autosuggestions || zsh-syntax-highlighting 
 
 # sourcing omzsh
 source "$ZSH/oh-my-zsh.sh"
