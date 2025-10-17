@@ -11,7 +11,8 @@
   "buffer_font_size": 15,
   "theme": {
     "mode": "system",
-    "light": "Nord",
-    "dark": "Gruvbox Baby"
-  }
+    "light": "Nord Dark",
+    "dark": "Gruvbox Dark"
+  },
+  "disable_ai": true
 }
