@@ -53,22 +53,25 @@ bindkey "^U" backward-kill-line
 # Shell integration
 eval "$(fzf --zsh)"
 
-# Personal Aliases
-alias ls='ls --color'
-
+# Aliases
+## Fun Stuff
 alias starwars='ssh starwarstel.net'
 alias bonsai='cbonsai -l -i'
 alias matrix='cmatrix -bs'
 alias news='clx -an'
 alias pipes='pipes.sh -t 3 -p 3 -f 80 -R'
 
+## Ez functionality
+alias ls='ls --color'
 alias buuc='brew update && brew upgrade && brew cleanup'
 alias cdc='cd ~/.config'
 alias cdd='cd ~/Downloads'
+alias cat='bat'
 
+## Script-related
 alias ipod='~/Developer/scripts/downloadSongs.sh iPod'
 
-# Work Aliases
+## Work Aliases
 alias workexp='cd ~/Downloads; echo "Moving into Downloads directory."; sftp TRDP\\workexp@192.168.11.57'
 alias db2='cd ~/Downloads; echo "Moving into Downloads directory."; sftp ben@10.25'
 alias ssj-old="/Users/ben/Documents/Work/Scripts/tracked/scripts/Login.pl"
