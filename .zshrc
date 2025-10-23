@@ -84,3 +84,6 @@ alias cdw='cd ~/Documents/Work'
 export PATH="/Users/ben/.gem/ruby/3.4.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$PATH:/Users/ben/.local/bin"
+
+# Bash prompt
+# export PROMPT='%F{green}%n@%m:%F{blue}%~ %(!.#.$)%f '
