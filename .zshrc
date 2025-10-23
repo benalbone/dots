@@ -80,8 +80,7 @@ alias disk='echo "Opening Returned Disk Swap walkthrough: "; nvim ~/Documents/Wo
 alias ssj="perl $HOME/Documents/Work/Scripts/tracked/scripts/NewLogin.pl"
 alias cdw='cd ~/Documents/Work'
 
-export PATH="/Users/ben/.gem/ruby/3.4.0/bin$PATH"
+# Pathing
+export PATH="/Users/ben/.gem/ruby/3.4.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-
-# Created by `pipx` on 2025-06-23 08:21:13
 export PATH="$PATH:/Users/ben/.local/bin"
