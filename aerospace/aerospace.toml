@@ -210,6 +210,10 @@ if.app-name-regex-substring = 'reminders'
 if.app-name-regex-substring = 'iphone mirroring'
     run = 'layout floating'
 
+[[on-window-detected]]
+if.app-name-regex-substring = 'screenshot'
+    run = 'layout floating'
+
 # Move certain windows to certain workspaces
 [[on-window-detected]]
 if.app-id = 'com.brave.Browser'
