@@ -214,6 +214,17 @@ if.app-name-regex-substring = 'iphone mirroring'
 if.app-name-regex-substring = 'screenshot'
     run = 'layout floating'
 
+### Ghostty x Aerpspace tiling fix
+###
+
+[[on-window-detected]]
+if.app-id="com.mitchellh.ghostty"
+run= [
+  "layout tiling",
+]
+
+###
+
 # Move certain windows to certain workspaces
 [[on-window-detected]]
 if.app-id = 'com.brave.Browser'
