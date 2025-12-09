@@ -74,10 +74,10 @@ alias ipod='~/Developer/scripts/downloadSongs.sh iPod'
 ## Work Aliases
 alias workexp='cd ~/Downloads; echo "Moving into Downloads directory."; sftp TRDP\\workexp@192.168.11.57'
 alias db2='cd ~/Downloads; echo "Moving into Downloads directory."; sftp ben@10.25'
-alias ssj-old="/Users/ben/Documents/Work/Scripts/tracked/scripts/Login.pl"
-alias pinj="/Users/ben/Documents/Work/Scripts/tracked/scripts/Ping.pl"
+alias ssj-old="/Users/ben/Documents/Work/Scripts/tracked/scripts/perl/Login.pl"
+alias pinj="/Users/ben/Documents/Work/Scripts/tracked/scripts/perl/Ping.pl"
 alias disk='echo "Opening Returned Disk Swap walkthrough: "; nvim ~/Documents/Work/Notes/disk-backup.md'
-alias ssj="perl $HOME/Documents/Work/Scripts/tracked/scripts/NewLogin.pl"
+alias ssj="perl $HOME/Documents/Work/Scripts/tracked/scripts/perl/NewLogin.pl"
 alias cdw='cd ~/Documents/Work'
 
 # Pathing
