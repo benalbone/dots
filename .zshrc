@@ -87,3 +87,7 @@ export PATH="$PATH:/Users/ben/.local/bin"
 
 # Bash prompt
 # export PROMPT='%F{green}%n@%m:%F{blue}%~ %(!.#.$)%f '
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/ben/.lmstudio/bin"
+# End of LM Studio CLI section
