@@ -91,3 +91,6 @@ export PATH="$PATH:/Users/ben/.local/bin"
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/ben/.lmstudio/bin"
 # End of LM Studio CLI section
+
+# Amp CLI
+export PATH="/Users/ben/.amp/bin:$PATH"
