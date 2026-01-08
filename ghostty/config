@@ -3,7 +3,7 @@ font-family = "JetBrainsMono Nerd Font Mono"
 cursor-style = block
 
 # shell-integration = none
-shell-integration-features = no-cursor, sudo, title
+shell-integration-features = no-cursor, sudo, title, ssh-terminfo, ssh-env
 
 clipboard-read = allow
 clipboard-write = allow
