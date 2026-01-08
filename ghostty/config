@@ -1,23 +1,25 @@
 font-size = 15
-font-family = "JetBrainsMono Nerd Font Mono"
 cursor-style = block
 
 # shell-integration = none
 shell-integration-features = no-cursor, sudo, title, ssh-terminfo, ssh-env
 
+# clipboard-paste-protection = true
 clipboard-read = allow
 clipboard-write = allow
 copy-on-select = clipboard
 
 # macos-titlebar-style = tabs
-macos-icon = blueprint
+# macos-icon = blueprint
+macos-icon = custom-style
+macos-icon-ghost-color = #FFC799
+macos-icon-screen-color = #101010
 
 confirm-close-surface = false
 
 background-opacity = 0.85
 background-blur-radius = 60
 
-# clipboard-paste-protection = true
 
 theme = Vesper
 # theme = Nord
