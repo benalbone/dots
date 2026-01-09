@@ -1,24 +1,11 @@
-# Stop auto-updates of OMZ
-DISABLE_AUTO_UPDATE="true"
-DISABLE_MAGIC_FUNCTIONS="true"
-DISABLE_COMPFIX="true"
-
-# cache compinit once per day to stop it loading on every zsh instance
-autoload -Uz compinit
-if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
-    compinit
-else
-    compinit -C
+ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+# Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated.
+if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]]; then
+  source /opt/homebrew/opt/zimfw/share/zimfw.zsh init
 fi
 
-# Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# omzsh theme
-ZSH_THEME="robbyrussell"
-
 # styling
-zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode auto      # update automatically without asking
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
@@ -27,12 +14,13 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # plugins
 plugins=(
+    evalcache
     git
     fzf-tab
 ) 
 
-# sourcing omzsh
-source "$ZSH/oh-my-zsh.sh"
+# Initialize modules. (sourcing zim)
+source ${ZIM_HOME}/init.zsh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -61,7 +49,8 @@ bindkey "^U" backward-kill-line
 ###########
 
 # Shell integration
-eval "$(fzf --zsh)"
+# eval "$(fzf --zsh)" ---- swapped to using the evalcache plugin for speed
+_evalcache fzf --zsh
 
 # Aliases
 ## Fun Stuff
@@ -94,6 +83,11 @@ alias cdw='cd ~/Documents/Work'
 export PATH="/Users/ben/.gem/ruby/3.4.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$PATH:/Users/ben/.local/bin"
+
+function timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
 
 # Bash prompt
 # export PROMPT='%F{green}%n@%m:%F{blue}%~ %(!.#.$)%f '
