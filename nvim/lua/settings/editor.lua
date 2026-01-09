@@ -50,8 +50,9 @@ vim.opt.colorcolumn = "80"
 -- sets colorscheme
 -- vim.cmd.colorscheme "vague"
 -- vim.cmd.colorscheme "catppuccin-mocha"
-vim.cmd.colorscheme "nord"
+-- vim.cmd.colorscheme "nord"
 -- vim.cmd.colorscheme "gruvbox"
+vim.cmd.colorscheme "vesper"
 
 -- sets background to transparent using the term colour
 vim.cmd [[
