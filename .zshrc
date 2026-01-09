@@ -1,8 +1,18 @@
+# Stop auto-updates of OMZ
+DISABLE_AUTO_UPDATE="true"
+DISABLE_MAGIC_FUNCTIONS="true"
+DISABLE_COMPFIX="true"
+
+# cache compinit once per day to stop it loading on every zsh instance
+autoload -Uz compinit
+if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
+    compinit
+else
+    compinit -C
+fi
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
-# fzf colorscheme (oxocarbon)
-# export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#ffffff,bg:#161616,hl:#08bdba --color=fg+:#f2f4f8,bg+:#262626,hl+:#3ddbd9 --color=info:#78a9ff,prompt:#33b1ff,pointer:#42be65 --color=marker:#ee5396,spinner:#ff7eb6,header:#be95ff'
 
 # omzsh theme
 ZSH_THEME="robbyrussell"
@@ -15,11 +25,11 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # history timestamp layout
 HIST_STAMPS="yyyy-mm-dd"
 
-# Source the zsh-syntax-highlighting catppuccin theme
-# source ~/.catppuccin_mocha-zsh-syntax-highlighting.zsh
-
 # plugins
-plugins=(git fzf-tab) # zsh-autosuggestions || zsh-syntax-highlighting 
+plugins=(
+    git
+    fzf-tab
+) 
 
 # sourcing omzsh
 source "$ZSH/oh-my-zsh.sh"
@@ -87,10 +97,3 @@ export PATH="$PATH:/Users/ben/.local/bin"
 
 # Bash prompt
 # export PROMPT='%F{green}%n@%m:%F{blue}%~ %(!.#.$)%f '
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/ben/.lmstudio/bin"
-# End of LM Studio CLI section
-
-# Amp CLI
-export PATH="/Users/ben/.amp/bin:$PATH"
