@@ -1,8 +1,13 @@
 return {
-    -- nord
-    {
-        'shaunsingh/nord.nvim',
+    -- vesper
+    { 
+        'datsfilipe/vesper.nvim' 
     },
+
+    -- nord
+    -- {
+    --     'shaunsingh/nord.nvim',
+    -- },
 
     -- gruvbox
     -- { 
