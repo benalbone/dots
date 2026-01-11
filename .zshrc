@@ -84,10 +84,15 @@ export PATH="/Users/ben/.gem/ruby/3.4.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$PATH:/Users/ben/.local/bin"
 
+# function to be able to test the startup times of zsh
 function timezsh() {
   shell=${1-$SHELL}
   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
 }
+
+# stop brew auto-updating and displaying hints
+export $HOMEBREW_NO_ENV_HINTS=1
+export $HOMEBREW_NO_AUTO_UPDATE=1
 
 # Bash prompt
 # export PROMPT='%F{green}%n@%m:%F{blue}%~ %(!.#.$)%f '
