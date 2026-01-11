@@ -91,8 +91,8 @@ function timezsh() {
 }
 
 # stop brew auto-updating and displaying hints
-export $HOMEBREW_NO_ENV_HINTS=1
-export $HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_ENV_HINTS=1
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Bash prompt
 # export PROMPT='%F{green}%n@%m:%F{blue}%~ %(!.#.$)%f '
