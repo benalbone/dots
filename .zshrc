@@ -90,9 +90,18 @@ function timezsh() {
   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
 }
 
-# stop brew auto-updating and displaying hints
+# homebrew config
 export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_BUNDLE_FILE="$HOME/Brewfile"
+
+# brew-file
+export HOMEBREW_BREWFILE="$HOME/.config/Brewfile"
+
+# brew-file::auto-update Brewfile after each update/install
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi
 
 # Bash prompt
 # export PROMPT='%F{green}%n@%m:%F{blue}%~ %(!.#.$)%f '
