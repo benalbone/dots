@@ -93,14 +93,16 @@ function timezsh() {
 # homebrew config
 export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_BUNDLE_FILE="$HOME/Brewfile"
+export HOMEBREW_BUNDLE_FILE="$HOME/.config/Brewfile"
 
-# brew-file
-export HOMEBREW_BREWFILE="$HOME/.config/Brewfile"
-
-# brew-file::auto-update Brewfile after each update/install
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
-  source $(brew --prefix)/etc/brew-wrap
+# brewfile auto-update
+if [[ -f "$HOMEBREW_BUNDLE_FILE" ]]; then
+    LAST_UPDATED=$(date -r "$HOMEBREW_BUNDLE_FILE" +%Y-%m-%d)
+    TODAY=$(date +%Y-%m-%d)
+    
+    if [[ "$LAST_UPDATED" != "$TODAY" ]]; then
+        brew bundle dump
+    fi
 fi
 
 # Bash prompt
