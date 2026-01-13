@@ -101,6 +101,7 @@ if [[ -f "$HOMEBREW_BUNDLE_FILE" ]]; then
     TODAY=$(date +%Y-%m-%d)
     
     if [[ "$LAST_UPDATED" != "$TODAY" ]]; then
+        echo "Updating Brewfile...\n"
         brew bundle dump --force
         echo "Brew file updated.\n"
     fi
