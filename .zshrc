@@ -6,18 +6,19 @@ fi
 
 # styling
 # zstyle ':omz:update' mode auto      # update automatically without asking
-zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+# zstyle ':completion:*' menu no
+# zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # history timestamp layout
 HIST_STAMPS="yyyy-mm-dd"
 
 # plugins
 plugins=(
-    evalcache
     git
-    fzf-tab
 ) 
+# leftover plugins
+# evalcache
+# fzf-tab
 
 # Initialize modules. (sourcing zim)
 source ${ZIM_HOME}/init.zsh
@@ -50,7 +51,7 @@ bindkey "^U" backward-kill-line
 
 # Shell integration
 # eval "$(fzf --zsh)" ---- swapped to using the evalcache plugin for speed
-_evalcache fzf --zsh
+# _evalcache fzf --zsh
 
 # Aliases
 ## Fun Stuff
@@ -84,28 +85,10 @@ export PATH="/Users/ben/.gem/ruby/3.4.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$PATH:/Users/ben/.local/bin"
 
-# function to be able to test the startup times of zsh
-function timezsh() {
-  shell=${1-$SHELL}
-  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
-}
-
 # homebrew config
 export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_BUNDLE_FILE="$HOME/.config/Brewfile"
-
-# brewfile auto-update
-if [[ -f "$HOMEBREW_BUNDLE_FILE" ]]; then
-    LAST_UPDATED=$(date -r "$HOMEBREW_BUNDLE_FILE" +%Y-%m-%d)
-    TODAY=$(date +%Y-%m-%d)
-    
-    if [[ "$LAST_UPDATED" != "$TODAY" ]]; then
-        echo "Updating Brewfile...\n"
-        brew bundle dump --force
-        echo "\nBrew file updated.\n"
-    fi
-fi
 
 # Bash prompt
 # export PROMPT='%F{green}%n@%m:%F{blue}%~ %(!.#.$)%f '
