@@ -4,11 +4,6 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} 
   source /opt/homebrew/opt/zimfw/share/zimfw.zsh init
 fi
 
-# styling
-# zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':completion:*' menu no
-# zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-
 # history timestamp layout
 HIST_STAMPS="yyyy-mm-dd"
 
@@ -16,9 +11,6 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(
     git
 ) 
-# leftover plugins
-# evalcache
-# fzf-tab
 
 # Initialize modules. (sourcing zim)
 source ${ZIM_HOME}/init.zsh
@@ -30,9 +22,7 @@ else
   export EDITOR='nvim'
 fi
 
-###################################
-### Enable natural text editing ###
-###################################
+# Enable natural text editing ###
 # Move to the beginning of the line. `Cmd + Left Arrow`:
 bindkey "^[[1;9D" beginning-of-line
 # Move to the end of the line. `Cmd + Right Arrow`:
@@ -45,13 +35,6 @@ bindkey "^[[1;3C" forward-word
 bindkey "^[[3;10~" backward-kill-word
 # Delete from the cursor to the beginning of the line. 'Command + Delete';
 bindkey "^U" backward-kill-line
-###########
-### end ###
-###########
-
-# Shell integration
-# eval "$(fzf --zsh)" ---- swapped to using the evalcache plugin for speed
-# _evalcache fzf --zsh
 
 # Aliases
 ## Fun Stuff
